@@ -1,0 +1,22 @@
+image_classification_train_test.py
+
+trains a model using the image data set provided in the "data" directory
+
+
+
+data directory format:
+data/label/
+
+example:
+data/1/
+data/2/
+data/3/
+
+example:
+data/tree/
+data/cow/
+data/monkey/
+
+
+
+
