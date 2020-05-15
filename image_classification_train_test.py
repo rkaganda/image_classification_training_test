@@ -60,7 +60,7 @@ criterion = nn.NLLLoss()  # negative log likely hood (smaller value = less likel
 optimizer = optim.Adam(model.fc.parameters(), lr=0.003)  # optimize that shit boi
 model.to(device)
 
-epochs = 100  # how many times we train
+epochs = 20  # how many times we train
 steps = 0  # step counter
 running_loss = 0  # the loss while we train
 print_every = 10  # how many steps we output loss
