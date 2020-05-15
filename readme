@@ -1,10 +1,10 @@
 image_classification_train_test.py
 
-trains a model using the image data set provided in the "data" directory
+trains a model using the image data set provided in the "root" directory
 
 
 
-data directory format:
+root directory format:
 root/label/
 
 example:
