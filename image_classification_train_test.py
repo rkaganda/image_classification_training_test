@@ -124,8 +124,8 @@ def predict_image(__image):
     image_tensor = test_transforms(__image).float()  # transform the image
     image_tensor = image_tensor.unsqueeze_(0)  # reshape the tensor
     __input = Variable(image_tensor)  # create to store image
-    __input = input.to(device)  # feed our input
-    output = model(input)  # get the result
+    __input = __input.to(device)  # feed our input
+    output = model(__input)  # get the result
     __index = output.data.cpu().numpy().argmax()  # fancy math to get the probability
     return __index
 
